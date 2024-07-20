@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios dos Jogos de Tabuleiro</title>
+    <meta name="description" content="Descubra os benefícios dos jogos de tabuleiro na vida social das pessoas.">
+    <meta name="keywords" content="jogos de tabuleiro, benefícios, vida social, habilidades, diversão, estresse, comunicação, cognição">
+    <meta name="author" content="Charles Vinícius Campos">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 14px;
+            line-height: 1.4;
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f0f0f0;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ff00;
+            padding: 1rem;
+        }
+
+        header h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        header button {
+            background: transparent;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            color: #00ff00;
+            padding: 0.3rem 0.6rem;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header button:hover {
+            background: #00ff00;
+            color: #000;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        article {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            flex: 1 1 300px;
+            margin: 1rem;
+            padding: 1rem;
+            max-width: 300px;
+            transition: transform 0.3s;
+            color: #00ff00;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ff00;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .dark-mode {
+            background-color: #000;
+            background: #000;
+            color: #f0f0f0;
+        }
+
+        .dark-mode header {
+            background: rgba(20, 20, 20, 0.8);
+        }
+
+        .dark-mode footer {
+            background: rgba(20, 20, 20, 0.8);
+        }
+
+        .dark-mode article {
+            background: rgba(40, 40, 40, 0.8);
+            color: #00ff00;
+        }
+
+        .dark-mode header button {
+            border: 1px solid #f0f0f0;
+            color: #f0f0f0;
+        }
+
+        .dark-mode header button:hover {
+            background: #f0f0f0;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benefícios dos Jogos de Tabuleiro</h1>
+        <button id="darkModeToggle">Dark Mode</button>
+    </header>
+    
+    <main>
+        <section class="container">
+            <article>
+                <h2>Benefícios para a Vida Social</h2>
+                <p>Jogos de tabuleiro promovem interação social, fortalecendo laços entre amigos e familiares.</p>
+            </article>
+            <article>
+                <h2>Desenvolvimento de Habilidades</h2>
+                <p>Eles ajudam no desenvolvimento de habilidades como pensamento crítico, estratégia e resolução de problemas.</p>
+            </article>
+            <article>
+                <h2>Inclusão e Diversão</h2>
+                <p>Proporcionam uma forma inclusiva e divertida de passar o tempo, onde todos podem participar independentemente da idade.</p>
+            </article>
+            <article>
+                <h2>Redução do Estresse</h2>
+                <p>Participar de jogos de tabuleiro pode ser uma forma eficaz de reduzir o estresse e relaxar a mente.</p>
+            </article>
+            <article>
+                <h2>Melhora na Comunicação</h2>
+                <p>Os jogos de tabuleiro incentivam a comunicação e a interação entre os participantes, melhorando habilidades sociais.</p>
+            </article>
+            <article>
+                <h2>Aprimoramento Cognitivo</h2>
+                <p>Jogos de tabuleiro podem melhorar a memória e outras funções cognitivas, mantendo a mente ativa.</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Charles Vinícius Campos - PDBD-0037</p>
+    </footer>
+
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
